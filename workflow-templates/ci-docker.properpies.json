@@ -1,0 +1,9 @@
+{
+  "name": "Workflow for SebWastiau Organization",
+  "description": "SebWastiau Organization CI Workflow template.",
+  "iconName": "GitHub-Mark",
+  "filePatterns": [
+    "package.json$",
+    "^Dockerfile"
+  ]
+}
