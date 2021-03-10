@@ -1,0 +1,14 @@
+name: MV Studio Organization CI
+
+on: [push]
+
+jobs:
+  push_to_registry:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        
+      - name: Set Build Number
+        run: echo BUILD_NUMBER=$((${{ secrets.LAST_BUILD_NUMBER }} + ${{ github.run_number}})) >> $GITHUB_ENV

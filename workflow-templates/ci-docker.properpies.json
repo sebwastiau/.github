@@ -1,0 +1,9 @@
+{
+  "name": "Workflow for MV Studio Organization",
+  "description": "MV Studio Organization CI Workflow template.",
+  "iconName": "GitHub-Mark",
+  "filePatterns": [
+    "package.json$",
+    "^Dockerfile"
+  ]
+}
